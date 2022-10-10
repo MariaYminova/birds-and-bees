@@ -6,42 +6,79 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TEST</title>
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css\reset.css">
+  <link rel="stylesheet" href="css\style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="container">
-    <div class="heading flex-display ">
-      <div class="contacts">
-        <div class="contacts__number text-14-SB ">7(925) 225-38-38</div>
-        <div class="contacts__number text-12-R ">7(495) 225-38-38</div>
-      </div>
-      <img class="icon-USD" src="img\icon-UDS.svg" alt="">
-      <img class="img-logo" src="img\img-logo.svg" alt="">
-      <img class="icon-3d" src="img\icon-3d.svg" alt="">
-      <div class="basket">
-        <img class="basket__icon" src="img\icon-basket.svg" alt="">
-        <div class="basket__namber text-12-SB">   1</div>
-      </div>
-      <button class="ui-button button-heading text-14-R  ">
-        Забронировать
-      </button>
-    </div>
-    <div class="menu text-14-SB flex-display">
-      <div class="menu__point"> Меню/доставка </div>
-      <div class="menu__point"> Банкеты </div>
-      <div class="menu__point"> Свадьбы </div>
-      <div class="menu__point"> Для детей </div>
-      <div class="menu__point"> Фотоотчеты </div>
-      <div class="menu__point"> Торты </div>
-      <div class="menu__point"> Отзывы </div>
-      <div class="menu__point"> Контакты </div>
-    </div>
+  <aside class="menu">
+    <img class="menu__side" src="icons\icon-dishes.svg" alt="">
+    <img class="menu__side" src="icons\icon-microphone.svg" alt="">
+    <img class="menu__side" src="icons\icon-toy.svg" alt="">
+
+    <img class="menu__side" src="icons\icon-fence .svg" alt="">
+    <img class="menu__side" src="icons\icon-pool.svg" alt="">
+    <img class="menu__side" src="icons\icon-bed .svg" alt="">
+
+    <div class="social">
+      <img class="social__link" src="icons\icon-vk.svg" alt="">
+      <img class="social__link" src="icons\icon-inst.svg" alt="">
+      <img class="social__link" src="icons\icon-fb.svg" alt="">
+  </aside>
   </div>
+  <div class="main-block">
+    <div class="container">
+      <header class="heading flex-display">
+        <div class="contacts">
+          <div class="contacts__number text-14-600 ">7(925) 225-38-38</div>
+          <div class="contacts__number text-12-400 ">7(495) 225-38-38</div>
+        </div>
+        <img class="icon-USD" src="icons\icon-UDS.svg" alt="">
+        <img class="img-logo" src="img\img-logo.svg" alt="">
+        <img class="icon-3d display" src="icons\icon-3d.svg" alt="">
+        <div class="basket">
+          <img class="basket__icon" src="icons\icon-basket.svg" alt="">
+          <div class="basket__namber text-12-600">1</div>
+        </div>
+        <button class="ui-button ui-button--small ui-button--border-beige text-14-400">
+          Забронировать
+        </button>
+      </header>
+      <div class="nav text-14-600 flex-display">
+        <nav class="nav__point"> Меню / доставка </nav>
+        <nav class="nav__point"> Банкеты </nav>
+        <nav class="nav__point"> Свадьбы </nav>
+        <nav class="nav__point "> Для детей </nav>
+        <img class="nav__point icon-chevror" src="icons\icon-chevror.svg" alt="">
+        <nav class="nav__point"> Фотоотчеты </nav>
+        <nav class="nav__point"> Торты </nav>
+        <nav class="nav__point"> Отзывы </nav>
+        <nav class="nav__point"> Контакты </nav>
+      </div>
+      <div class="info">
+        <div class="text-56-700"> Ресторан</div>
+        <div class=" H2 text-20-400"> Идеальное место для вашего праздника!</div>
+        <div class="working-hours flex-display">
+          <div class="text-12-700">ПН — ЧТ
+            <div class="working-hours__time text-16-400">10:00 — 00:00</div>
+          </div>
+          <div class="text-12-700">ПТ — СБ
+            <div class="working-hours__time text-16-400">Круглосуточно</div>
+          </div>
+        </div>
+        <div class="button-area">
+          <button class="button-area__button ui-button ui-button--fill-beige text-14-400">Забронировать </button>
+          <button class="button-area__button ui-button button-transparent text-14-400">Подробнее </button>
+          <div class="button-arrows">
+            <button> <img src="icons\icon-left.svg"> </button>
+            <button> <img src="icons\icon-right.svg"> </button>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 
 </html>
