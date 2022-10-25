@@ -1,0 +1,122 @@
+.text {
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+
+  &-12 {
+    font-size: 12px;
+    color: #ffffff;
+  }
+
+  &-16 {
+    font-size: 16px;
+    color: #ffffff;
+  }
+
+  &-20 {
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  &-30 {
+    font-size: 30px;
+    color: #ffffff;
+  }
+
+  &-56 {
+    font-size: 56px;
+    color: #ffffff;
+  }
+
+  &--bold {
+    font-weight: 600;
+  }
+
+  &--semibold {
+    font-weight: 700;
+  }
+
+  &--opacity-50 {
+    opacity: 50%;
+  }
+
+  &--black {
+    color: black;
+  }
+
+  &--grey {
+    color: #b1aeae;
+  }
+
+  &--l-h-21 {
+    line-height: 21px;
+  }
+}
+
+.background {
+  &-grey {
+    background-color: #f9f9f9;
+  }
+
+  &-dark {
+    background-color: #2d2d2d;
+  }
+
+  &__black {
+    background-color: #262626;
+  }
+}
+
+.m {
+  &-r-10 {
+    margin-right: 10px;
+  }
+
+  &-r-15 {
+    margin-right: 15px;
+  }
+
+  &-r-20 {
+    margin-right: 20px;
+  }
+
+  &-r-25 {
+    margin-right: 25px;
+  }
+
+  &-l-10 {
+    margin-left: 10px;
+  }
+
+  &-l-15 {
+    margin-left: 15px;
+  }
+
+  &-l-20 {
+    margin-left: 20px;
+  }
+
+  &-l-25 {
+    margin-bottom: 25px;
+  }
+
+  &-b-10 {
+    margin-bottom: 10px;
+  }
+
+  &-b-15 {
+    margin-bottom: 15px;
+  }
+
+  &-b-20 {
+    margin-bottom: 20px;
+  }
+
+  &-b-25 {
+    margin-bottom: 25px;
+  }
+
+  &-b-30 {
+    margin-bottom: 35px;
+  }
+}

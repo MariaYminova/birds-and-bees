@@ -7,12 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TEST</title>
   <link rel="stylesheet" href="css\reset.css">
+  <link rel="stylesheet" href="css\helpers.css">
   <link rel="stylesheet" href="css\style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
   <aside class="menu">
     <img class="menu__side" src="icons\icon-dishes.svg" alt="">
@@ -29,80 +29,180 @@
       <img class="social__link" src="icons\icon-fb.svg" alt="">
     </div>
   </aside>
-
-  <header class="heading">
-    <div class="container">
-      <div class="heading__wrapper">
-        <div class="heading__left">
-          <div class="heading__contacts">
-            <div class="heading__number text__14-600">7(925) 225-38-38</div>
-            <div class="heading__number text__12-400">7(495) 225-38-38</div>
-          </div>
-          <img class="icon-USD" src="icons\icon-UDS.svg" alt="">
-        </div>
-        <div class="heading__center">
-          <img src="img\img-logo.svg" alt="">
-        </div>
-        <div class="heading__right">
-          <img class="icon-3d" src="icons\icon-3d.svg" alt="">
-          <div class="icon-basket">
-            <img src="icons\icon-basket.svg" alt="">
-            <div class="icon-basket__namber text__12-600">1</div>
-          </div>
-          <button class="ui-button ui-button--small ui-button--border-golden text__14-400">
-            Забронировать
-          </button>
-        </div>
-      </div>
-      <div class="nav text__14-600 flex-display">
-        <nav class="nav__point"> Меню / доставка </nav>
-        <nav class="nav__point"> Банкеты </nav>
-        <nav class="nav__point"> Свадьбы </nav>
-        <nav class="nav__point "> Для детей </nav>
-        <img class="nav__point icon-chevror" src="icons\icon-chevror.svg" alt="">
-        <nav class="nav__point"> Фотоотчеты </nav>
-        <nav class="nav__point"> Торты </nav>
-        <nav class="nav__point"> Отзывы </nav>
-        <nav class="nav__point"> Контакты </nav>
-      </div>
-    </div>
-  </header>
-  <section>
-    <img class="background-slider" src="img\img-background.png" alt="">
-    <div class="slider">
+  <main>
+    <header class="heading">
       <div class="container">
-        <div class="slider__info">
-          <div class="text__56-700">Ресторан</div>
-          <div class=" H2 text__20-400">Идеальное место для вашего праздника!</div>
-          <div class="working-hours flex-display">
-            <div class="text__12-700">ПН — ЧТ
-              <div class="working-hours__time text__16-400">10:00 — 00:00</div>
+        <div class="heading__wrapper">
+          <div class="heading__left">
+            <div class="heading__contacts">
+              <div class="heading__number text text--bold">7(925) 225-38-38</div>
+              <div class="heading__number text-12">7(495) 225-38-38</div>
             </div>
-            <div class="text__12-700">ПТ — СБ
-              <div class="working-hours__time text__16-400">Круглосуточно</div>
-            </div>
+            <img class="icon-USD" src="icons\icon-UDS.svg" alt="">
           </div>
-          <div class="button-area">
-            <button class="button-area__button ui-button ui-button--fill-golden text__14-400">Забронировать </button>
-            <button class="button-area__button ui-button button-transparent text__14-400">Подробнее </button>
-            <div class="button-arrows">
+          <div class="heading__center">
+            <img src="img\img-logo.svg" alt="">
+          </div>
+          <div class="heading__right">
+            <img class="icon-3d" src="icons\icon-3d.svg" alt="">
+            <div class="icon-basket">
+              <img src="icons\icon-basket.svg" alt="">
+              <div class="icon-basket__namber text-12 text--bold">1</div>
+            </div>
+            <button class="ui-button ui-button--small ui-button--border-golden text">
+              Забронировать
+            </button>
+          </div>
+        </div>
+        <div class="nav text text--bold flex-display">
+          <nav class="nav__point"> Меню / доставка </nav>
+          <nav class="nav__point"> Банкеты </nav>
+          <nav class="nav__point"> Свадьбы </nav>
+          <nav class="nav__point "> Для детей </nav>
+          <img class="nav__point icon-chevror" src="icons\icon-chevror.svg" alt="">
+          <nav class="nav__point"> Фотоотчеты </nav>
+          <nav class="nav__point"> Торты </nav>
+          <nav class="nav__point"> Отзывы </nav>
+          <nav class="nav__point"> Контакты </nav>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="slider">
+        <div class="slider__slide slide-info ">
+          <img class="slide-info__background-slide " src="img\img-background.png" alt="">
+          <div class="container">
+            <div class="slide-info__description">
+              <div class="text-56 text--semibold">Ресторан</div>
+              <div class=" heading-2 text-20 text--grey">Идеальное место для вашего праздника!</div>
+              <div class="slider__working-hours flex-display">
+                <div>
+                  <div class="text-12 text--semibold text--opacity-50">ПН — ЧТ</div>
+                  <div class="working-hours__time text-16 text--opacity-100">10:00 — 00:00</div>
+                </div>
+                <div>
+                  <div class="text-12 text--semibold text--opacity-50">ПТ — СБ</div>
+                  <div class="working-hours__time text-16">Круглосуточно</div>
+                </div>
+              </div>
+              <div class="button-area">
+                <button class="button-area__button ui-button ui-button--fill-golden text">Забронировать
+                </button>
+                <button class="button-area__button ui-button button-transparent text">Подробнее </button>
+              </div>
+            </div>
+            <div class="slider__nav">
+              <div class="button-arrows">
+              </div>
               <button> <img src="icons\icon-left.svg"> </button>
               <button> <img src="icons\icon-right.svg"> </button>
             </div>
+            <div class="slider__bottom">
+              <div class="slider__block">
+                <img class="slider__icon" src="icons\icon-dishes-bottom.svg" alt="">
+                <div class="text text--bold">Ресторан</div>
+                <img class="slider__icon" src="icons\line.svg" alt="">
+              </div>
+              <div class="slider__block">
+                <img class="slider__icon" src="icons\icon-microphone-bottom.svg" alt="">
+                <div class="text text--bold"> Караоке</div>
+                <img class="slider__icon" src="icons\line.svg" alt="">
+              </div>
+              <div class="slider__block">
+                <img class="slider__icon" src="icons\icon-toy-bottom.svg" alt="">
+                <div class="text text--bold">Детский клуб</div>
+                <img class="slider__icon" src="icons\line.svg" alt="">
+              </div>
+              <div class="slider__block">
+                <img class="slider__icon" src="icons\icon-fence-bottom.svg" alt="">
+                <div class="text text--bold">Веревочный парк</div>
+                <img class="slider__icon" src="icons\line.svg" alt="">
+              </div>
+              <div class="slider__block">
+                <img class="slider__icon" src="icons\icon-pool-bottom.svg" alt="">
+                <div class="text text--bold">Бассейн</div>
+                <img class="slider__icon" src="icons\line.svg" alt="">
+              </div>
+              <div class="slider__block">
+                <img class="slider__icon" src="icons\icon-hotel-bottom.svg" alt="">
+                <div class="text text--bold ">Отель</div>
+                <img class="slider__icon" src="icons\line.svg" alt="">
+              </div>
+            </div>
           </div>
         </div>
-        <div class="nav-slider">
-          <div class="nav-slider__icon"><img src="icons\icon-dishes-bottom.svg" alt=""></div>
-          <div class="nav-slider__icon"><img src="icons\icon-microphone-bottom.svg" alt=""> </div>
-          <div class="nav-slider__icon"><img src="icons\icon-toy-bottom.svg" alt=""> </div>
-          <div class="nav-slider__icon"><img src="icons\icon-fence-bottom.svg" alt=""> </div>
-          <div class="nav-slider__icon"><img src="icons\icon-pool-bottom.svg" alt=""> </div>
-          <div class="nav-slider__icon"><img src="icons\icon-hotel-bottom.svg" alt=""> </div>
+      </div>
+    </section>
+    <section class="background-grey">
+      <div class="container">
+        <div class="text-30 text--bold text--black"> Мероприятия у нас</div>
+      </div>
+      <div class="slider-events flex-display">
+        <div class="slider-events__slide">
+          <img class="m-b-30" src="img\img-events-1.png" alt="">
+          <div class="text--semibold text-16 text--black">Корпоративы <img class="m-l-15"
+              src="icons\icon-arrow-golden.svg" alt="">
+          </div>
+        </div>
+        <div class="slider-events__slide">
+          <img class="m-b-30" src=img\img-events-2.png alt="">
+          <div class="text--semibold text-16 text--black">Выпускные <img class="m-l-15"
+              src="icons\icon-arrow-golden.svg" alt="">
+          </div>
+        </div>
+        <div class="slider-events__slide">
+          <img class="m-b-30" src=img\img-events-3.png alt="">
+          <div class="text--semibold text-16 text--black">Свадьбы <img class="m-l-15" src="icons\icon-arrow-golden.svg"
+              alt="">
+          </div>
+        </div>
+        <div class="slider-events__slide">
+          <img class="m-b-30" src="img\img-events-4.png" alt="">
+          <div class="text--semibold text-16 text--black">Baby Shower <img class="m-l-15"
+              src="icons\icon-arrow-golden.svg" alt="">
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer">
+        <div class="footer__top background-dark flex-display">
+          <div class="footer__logo">
+            <img src="img\img-logo.svg" alt="">
+          </div>
+          <div class="footer__button">
+            <button class="ui-button ui-button--border-golden ui-button--small m-b-30">Забронировать</button>
+            <div class="call flex-display">
+              <img class="m-r-15" src="icons\icon-phone.svg" alt="">
+              <div class="text text--semibold"> Заказать звонок</div>
+            </div>
+          </div>
+          <div class="footer__contacts">
+            <div class="m-b-10 text text--bold">7(925) 225-38-38</div>
+            <div class="text-12 m-b-30">7(495) 225-38-38</div>
+            <div class="footer__social">
+              <img src="icons\icon-vk-footer .svg" alt="">
+              <img src="icons\icon-inst.svg" alt="">
+              <img src="icons\icon-fb.svg" alt="">
+            </div>
+          </div>
+          <div class="footer__connection">
+            <div class="text text--l-h-21 m-b-20">
+              Подпишитесь на рассылку Птицы и Пчёлы и будьте в курсе всех новостей и событий
+            </div>
+            <div class="footer__e-mail m-b-10 ">
+              <div class="text text--grey"> E-mail: </div>
+              <img class="footer__send" src="icons\icon-send .svg" alt="">
+            </div>
+            <img src="icons\icon-line-grey.svg" alt="">
+          </div>
+        </div>
+        <div class="footer__bottom background-black">
+        </div>
+      </div>
+  </footer>
 </body>
-
 </html>
