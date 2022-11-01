@@ -19,67 +19,95 @@ body {
 .container {
   max-width: 1142px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
 }
 
-.slide-info {
+.slider {
+ 
   width: 100%;
-  height: 100%;
+  
+  
+}
 
-  &__background-slide {
+.pagination-slider {
+ position: relative;
+  display:flex;
+  min-width: 0;
+
+    &__bottom {
+      margin: 0 auto;
+      position: absolute;
+      bottom: 40px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+    }
+
+    &__block {
+      cursor: pointer;
+      transition: 0.2s;
+      opacity: 50%;
+    }
+  
+    __block:hover {
+      opacity: 100%;
+    }
+  
+    &__icon {
+      margin: 10px 30px 16px 0px;
+    }
+  
+    &__icon-last {
+      margin: 10px 0px 16px 0px;
+    }
+  
+    &__text {
+      font-weight: 600;
+      font-size: 14px;
+      color: #ffffff;
+    }
+}
+
+.bul {
+  opacity: 100;
+}
+
+.m-swiper-button-prev {
+  margin-top: 40px;
+}
+
+.slide {
+  height: 100vh;
+
+  &__background {
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     position: absolute;
-  }
-
-  &__description {
-    position: relative;
+    object-fit: cover;
+    z-index: -1;
   }
 }
 
-.slider {
-  &__slide {
-    position: relative;
-    height: 100vh;
-  }
+.info-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
 
   &__nav {
-    position: relative;
   }
 
-  &__bottom {
-    position: relative;
-    display: flex;
-  }
-
-  &__block {
-    cursor: pointer;
-    transition: 0.2s;
-    opacity: 50%;
-  }
-
-  &__block:hover {
-    opacity: 100%;
-  }
-
-  &__icon {
-    margin: 10px 30px 16px 0px;
-  }
-
-  &__text {
-    font-weight: 600;
-    font-size: 14px;
-    color: #ffffff;
+  &__description {
   }
 }
 
 .slider-events {
-  margin: 56px 0px 30px 0;
+
+  padding: 56px 0  40px 0;
+  overflow: hidden;
 
   &__slide {
     margin-right: 31px;
@@ -88,7 +116,7 @@ body {
 
 .heading {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   left: 100px;
   right: 0;
 
@@ -206,8 +234,10 @@ body {
 }
 
 .footer {
-  margin: 34px 0 42px 40px;
-
+  
+  &__top {
+    padding:34px 0 42px 0;
+  }
   &__logo {
     margin-right: 92px;
   }
@@ -232,6 +262,15 @@ body {
 
   &__send {
     cursor: pointer;
+  }
+
+  &__bottom {
+    padding: 22px 0 21px 0;
+  }
+
+  &__bottom-info {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
