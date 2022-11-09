@@ -17,18 +17,43 @@
 
 <body>
   <aside class="menu">
-    <img class="menu__side" src="icons/icon-dishes.svg" alt="">
-    <img class="menu__side" src="icons/icon-microphone.svg" alt="">
-    <img class="menu__side" src="icons/icon-toy.svg" alt="">
-
-    <img class="menu__side" src="icons/icon-fence .svg" alt="">
-    <img class="menu__side" src="icons/icon-pool.svg" alt="">
-    <img class="menu__side" src="icons/icon-bed .svg" alt="">
+    <div class="menu__block menu__text">
+      <img class="menu__side m-r-10" src="icons/icon-dishes.svg" alt="">
+      <div>Ресторан</div>
+    </div>
+    <div class="menu__block menu__text">
+      <img class="menu__side m-r-10" src="icons/icon-microphone.svg" alt="">
+      <div>Караоке</div>
+    </div>
+    <div class="menu__block menu__text">
+      <img class="menu__side m-r-10" src="icons/icon-toy.svg" alt="">
+      <div>Детский клуб</div>
+    </div>
+    <div class="menu__block menu__text">
+      <img class="menu__side m-r-10" src="icons/icon-fence .svg" alt="">
+      <div>Веревочный парк</div>
+    </div>
+    <div class="menu__block menu__text">
+      <img class="menu__side m-r-10" src="icons/icon-pool.svg" alt="">
+      <div>Бассеин</div>
+    </div>
+    <div class="menu__block menu__text">
+      <img class="menu__side m-r-10" src="icons/icon-bed .svg" alt="">
+      <div>Отель</div>
+    </div>
 
     <div class="social">
-      <img class="social__link" src="icons/icon-vk.svg" alt="">
-      <img class="social__link" src="icons/icon-inst.svg" alt="">
-      <img class="social__link" src="icons/icon-fb.svg" alt="">
+      <div class="social__block text text-16 text--grey text--semibold">
+        <img class="social__link m-r-35" src="icons/icon-vk.svg" alt=""> ВКотакте
+      </div>
+
+      <div class="social__block text text-16 text--grey text--semibold">
+        <img class="social__link m-r-35" src="icons/icon-inst.svg" alt=""> Instagram
+      </div>
+
+      <div class="social__block text text-16 text--grey text--semibold">
+        <img class="social__link m-r-35" src="icons/icon-fb.svg" alt="">Facebook
+      </div>
     </div>
   </aside>
   <main>
@@ -249,32 +274,215 @@
       </div>
     </section>
     <section class="background-grey p-t-80">
-
       <div class="container">
-        <div class="text-30 text--semibold text--black"> Мероприятия у нас</div>
-        <div class="slider-events flex-display">
-          <div class="slider-events__slide">
-            <img class="m-b-30" src="img/img-events-1.png" alt="">
-            <div class="text--semibold text-16 text--black">Корпоративы <img class="m-l-15"
-                src="icons/icon-arrow-golden.svg" alt="">
+        <div class="slider-events swiper-events">
+          <div class="block-header m-b-55">
+            <div class="text-30 text--semibold text--black"> Мероприятия у нас</div>
+            <div>
+              <button class="events-swiper-button-prev"> <img src="icons/icon-arrows-left-black.svg"> </button>
+              <button class="events-swiper-button-next"> <img src="icons/icon-arrows-right-black.svg"> </button>
             </div>
           </div>
-          <div class="slider-events__slide">
-            <img class="m-b-30" src=img/img-events-2.png alt="">
-            <div class="text--semibold text-16 text--black">Выпускные <img class="m-l-15"
-                src="icons/icon-arrow-golden.svg" alt="">
+
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="m-b-30" src="img/img-events-1.png" alt="">
+              <div class=" text--semibold text-16 text--black">Корпоративы <img class="m-l-15"
+                  src="icons/icon-arrow-golden.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <img class="m-b-30" src=img/img-events-2.png alt="">
+              <div class="text--semibold text-16 text--black">Выпускные <img class="m-l-15"
+                  src="icons/icon-arrow-golden.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="m-b-30" src=img/img-events-3.png alt="">
+              <div class="text--semibold text-16 text--black">Свадьбы <img class="m-l-15"
+                  src="icons/icon-arrow-golden.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="m-b-30" src="img/img-events-4.jpg" alt="">
+              <div class="text--semibold text-16 text--black">Baby Shower <img class="m-l-15"
+                  src="icons/icon-arrow-golden.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="m-b-30" src="img/img-events-1.png" alt="">
+              <div class="text--semibold text-16 text--black">Корпоративы <img class="m-l-15"
+                  src="icons/icon-arrow-golden.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="m-b-30" src=img/img-events-2.png alt="">
+              <div class="text--semibold text-16 text--black">Выпускные <img class="m-l-15"
+                  src="icons/icon-arrow-golden.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="m-b-30" src=img/img-events-3.png alt="">
+              <div class="text--semibold text-16 text--black">Свадьбы <img class="m-l-15"
+                  src="icons/icon-arrow-golden.svg" alt="">
+              </div>
             </div>
           </div>
-          <div class="slider-events__slide">
-            <img class="m-b-30" src=img/img-events-3.png alt="">
-            <div class="text--semibold text-16 text--black">Свадьбы <img class="m-l-15"
-                src="icons/icon-arrow-golden.svg" alt="">
+          <div class="swiper-pagination-events m-t-40">
+            <img src="icons/icon-pagination.svg" alt="" class="pagination-stripe">
+            <img src="icons/icon-pagination-point.svg" alt="" class="pagination-point">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-white">
+      <div class="container">
+        <div class="text text--bold text-30 text--black m-b-45">Наши залы</div>
+        <div class="block-card">
+          <div class="card-room">
+            <img class="card-room__img" src="img/img-room-big.jpg" alt="">
+            <div class="card-room__content">
+              <div>
+                <div class="block-title text text--bold text-10">до 160 гостей</div>
+              </div>
+              <div class="card-room__info">
+                <div class="text text-20 text--semibold m-b-10"> Зал большой банкетный</div>
+                <div class="text  text-card "> Роскошный банкетный зал в мягком классическом дизайне.</div>
+              </div>
             </div>
           </div>
-          <div class="slider-events__slide">
-            <img class="m-b-30" src="img/img-events-4.png" alt="">
-            <div class="text--semibold text-16 text--black">Baby Shower <img class="m-l-15"
-                src="icons/icon-arrow-golden.svg" alt="">
+          <div class="card-room">
+            <img class="card-room__img" src="img/img-room-gold.jpg" alt="">
+            <div class="card-room__content">
+              <div>
+                <div class="block-title text text--bold text-10">до 160 гостей</div>
+              </div>
+              <div class="card-room__info">
+                <div class="text text-20 text--semibold m-b-10"> Зал Золотая Комната</div>
+                <div class="text  text-card "> Золотая комната в золотом убранстве и круглым столом на 12 человек.</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-room">
+            <img class="card-room__img" src="img/img-room-flowers.jpg" alt="">
+            <div class="card-room__content">
+              <div>
+                <div class="block-title text text--bold text-10">до 160 гостей</div>
+              </div>
+              <div class="card-room__info">
+                <div class="text text-20 text--semibold m-b-10">Зал Оранжерея</div>
+                <div class="text  text-card ">Настоящая оранжерея с панорамными окнами, мягкими диванами.</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-room">
+            <img class="card-room__img" src="img/img-room-living.jpg" alt="">
+            <div class="card-room__content">
+              <div>
+                <div class="block-title text text--bold text-10">до 160 гостей</div>
+              </div>
+              <div class="card-room__info">
+                <div class="text text-20 text--semibold m-b-10"> Зал Гостиная</div>
+                <div class="text  text-card ">Оригинальное по дизайну пространство со стеклянной стеной в сторону
+                  бассейна.</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-room">
+            <img class="card-room__img" src="img/img-room-loft.jpg" alt="">
+            <div class="card-room__content">
+              <div>
+                <div class="block-title text text--bold text-10">до 160 гостей</div>
+              </div>
+              <div class="card-room__info">
+                <div class="text text-20 text--semibold m-b-10"> Зал Лофт</div>
+                <div class="text  text-card "> Зал в модном стиле лофт для индивидуальных мероприятий.</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-room">
+            <img class="card-room__img" src="img/img-room-karaoke.jpg" alt="">
+            <div class="card-room__content">
+              <div>
+                <div class="block-title text text--bold text-10">до 160 гостей</div>
+              </div>
+              <div class="card-room__info">
+                <div class="text text-20 text--semibold m-b-10">Караоке зал «Гнездо» </div>
+                <div class="text  text-card "> Роскошный деревянный интерьер в стиле австрийского шале.</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-room">
+            <img class="card-room__img" src="img/img-room-hollow.jpg" alt="">
+            <div class="card-room__content">
+              <div>
+                <div class="block-title text text--bold text-10">до 160 гостей</div>
+              </div>
+              <div class="card-room__info">
+                <div class="text text-20 text--semibold m-b-10"> Караоке зал «Дупло»</div>
+                <div class="text  text-card ">Роскошный деревянный интерьер в стиле австрийского шале.</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-room">
+            <img class="card-room__img" src="img/img-room-dances.jpg" alt="">
+            <div class="card-room__content">
+              <div>
+                <div class="block-title text text--bold text-10">до 160 гостей</div>
+              </div>
+              <div class="card-room__info">
+                <div class="text text-20 text--semibold m-b-10">Dance караоке-бар «Какаду»</div>
+                <div class="text text-card ">Модный стильный фьюжен дизайн.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-orange">
+      <img src="img/img-deleveri.png" alt="" class="deliveri-img">
+      <div class="container">
+        <div class="section-orange__info">
+          <div class="text text--bold text-30 m-b-45">Доставка</div>
+          <div class="text text-20 m-b-30 section-orange__text ">С другой стороны дальнейшее развитие различных форм
+            деятельности позволяет оценить значение форм развития. </div>
+          <div>
+            <button class="button-area__button ui-button ui-button--fill-white text text--orange "> Посмотреть меню
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-white">
+      <div class="container">
+        <div class="block-header">
+          <div class="text text--bold text-30 text--black m-b-50"> Последние фотоотчеты</div>
+          <button class="ui-button ui-button--small ui-button--border-golden text text--black">
+            Все фотоотчеты
+          </button>
+        </div>
+
+
+        <div class="flex-display">
+          <div class="card-photo">
+            <img class="card-photo__img" src="img/img-owl.jpg" alt="">
+            <div class="card-photo__content">
+              <div class="text text-12 text--grey m-b-5"> 31 мая</div>
+              <div class="text text-16 text--semibold"> День рождения Софии в стиле Гарри Поттера!</div>
+            </div>
+          </div>
+          <div class="card-photo">
+            <img class="card-photo__img" src="img/img-children.jpg" alt="">
+            <div class="card-photo__content">
+              <div class="text text-12 text--grey m-b-5"> 26 мая</div>
+              <div class="text text-16 text--semibold"> Выпускной начальной школы</div>
+            </div>
+          </div>
+          <div class="card-photo">
+            <img class="card-photo__img" src="img/img-holiday.jpg" alt="">
+            <div class="card-photo__content">
+              <div class="text text-12 text--grey m-b-5"> 9 мая</div>
+              <div class="text text-16 text--semibold"> Праздник Дня Победы</div>
             </div>
           </div>
         </div>
@@ -289,7 +497,8 @@
             <img src="img/img-logo.svg" alt="">
           </div>
           <div class="footer__button">
-            <button class="ui-button ui-button--border-golden ui-button--small m-b-30">Забронировать</button>
+            <button
+              class="ui-button ui-button--border-golden ui-button--small m-b-30 text--white">Забронировать</button>
             <div class="call flex-display">
               <img class="m-r-15" src="icons/icon-phone.svg" alt="">
               <div class="text text--semibold"> Заказать звонок</div>
@@ -335,6 +544,7 @@
       </div>
     </div>
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src=js/index.js></script>
 </body>

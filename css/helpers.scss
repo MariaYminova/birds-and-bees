@@ -1,7 +1,14 @@
 .text {
-  font-weight: 400;
-  color: #ffffff;
+  
+color: #ffffff;
   font-size: 14px;
+  line-height: 21px;
+
+  &-10 {
+    font-size: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
 
   &-12 {
     font-size: 12px;
@@ -10,16 +17,23 @@
 
   &-16 {
     font-size: 16px;
+    line-height: 24px;
     color: #ffffff;
   }
 
   &-20 {
     font-size: 20px;
+    line-height: 30px;
     color: #ffffff;
   }
 
   &-30 {
     font-size: 30px;
+    color: #ffffff;
+  }
+
+  &-40 {
+    font-size: 40px;
     color: #ffffff;
   }
 
@@ -46,6 +60,14 @@
 
   &--grey {
     color: #b1aeae;
+  }
+
+  &--orange {
+    color:  #E3BF77;
+  }
+
+  &--white {
+    color: #ffffff;
   }
 
   &--l-h-21 {
@@ -83,6 +105,9 @@
   &-r-25 {
     margin-right: 25px;
   }
+  &-r-35 {
+    margin-right: 35px;
+  }
 
   &-r-40 {
     margin-right: 40px;
@@ -107,8 +132,13 @@
   &-b--10 {
     margin-bottom: -10px;
   }
+
   &-b-10 {
     margin-bottom: 10px;
+  }
+
+  &-b-5 {
+    margin-bottom: 5px;
   }
 
   &-b-15 {
@@ -126,10 +156,29 @@
   &-b-30 {
     margin-bottom: 35px;
   }
+
+  &-b-45 {
+    margin-bottom: 45px;
+  }
+
+  &-b-50 {
+    margin-bottom: 50px;
+  }
+
+  &-b-55 {
+    margin-bottom: 55px;
+  }
+
+  &-t-10 {
+    margin-top: 10px;
+  }
+
+  &-t-40 {
+    margin-top: 40px;
+  }
 }
 
 .p {
-
   &-t-80 {
     padding-top: 80px;
   }
