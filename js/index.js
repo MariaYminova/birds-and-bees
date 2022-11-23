@@ -6,8 +6,8 @@ const swiper = new Swiper('.swiper', {
     el: '.pagination-slider__bottom',
     clickable: true,
     type: 'custom',
-    bulletClass:'pagination-slider__block'
-    
+    bulletClass: 'pagination-slider__block'
+
   },
 
   navigation: {
@@ -24,10 +24,9 @@ const swiperEvents = new Swiper(".swiper-events", {
   centeredSlides: false,
 
   scrollbar: {
-    el: ".pagination-point",
-    hide: true,
-    type: 'custom',
-    
+    el: ".my-scrollbar",
+    draggable: true,
+    dragSize: 74,
   },
 
   navigation: {
@@ -36,3 +35,46 @@ const swiperEvents = new Swiper(".swiper-events", {
   },
 
 });
+
+
+const tabsBtn = document.querySelectorAll(".tabs__nav-btn")
+const tabsitem = document.querySelectorAll(".slider-rooms__slide")
+
+tabsBtn.forEach(function (item) {
+  item.addEventListener("click", function () {
+    let currentBtn = item;
+    let tabId = currentBtn.getAttribute("data-tab");
+    let currentTab = document.querySelector(tabId);
+
+    tabsBtn.forEach(function (item) {
+      item.classList.remove('active');
+    });
+
+    tabsitem.forEach(function (item) {
+      item.classList.remove('active');
+    });
+
+    currentBtn.classList.add('active');
+    currentTab.classList.add('active');
+  });
+});
+
+const btn = document.querySelectorAll(".pagination-slider__block")
+
+btn.forEach(function (item) {
+  item.addEventListener('click', function () {
+    let bntHover = item;
+
+
+    btn.forEach(function (item) {
+      item.classList.remove('active');
+    });
+
+    bntHover.classList.add('active')
+
+    
+    });
+  });
+
+
+

@@ -17,34 +17,61 @@
 
 <body>
   <aside class="menu">
-    <div class="menu__block menu__text">
-      <img class="menu__side m-r-10" src="icons/icon-dishes.svg" alt="">
+    <div class="menu__block menu__text menu__icon">
+      <div> <svg class="menu__side m-r-10" fill="#e3bf77" width="100" height="100" viewBox="0 0 100 100"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M69.2581 44.1223L69.2304 65.9532C69.2299 66.3855 69.1304 66.7951 68.9534 67.1605C68.9141 67.2418 68.871 67.3207 68.8243 67.3974C68.7776 67.474 68.7273 67.5481 68.6736 67.6196C68.1639 68.2991 67.3515 68.739 66.4388 68.7378C66.3232 68.7377 66.209 68.7304 66.0971 68.7165C64.8065 68.5565 63.7872 67.5111 63.6663 66.2097C63.6583 66.1229 63.6542 66.035 63.6543 65.9461L63.6895 38.2725C63.6905 37.4777 64.1791 36.8041 64.9343 36.5564C65.6897 36.3086 66.4822 36.5619 66.9537 37.2016L67.0154 37.2854C67.5688 38.0361 68.0301 38.8539 68.3864 39.7161C68.9668 41.1204 69.2601 42.6029 69.2581 44.1223ZM65.4458 38.1152C65.3305 38.153 65.3303 38.2414 65.3303 38.2745L65.308 55.7523L67.6029 55.7553L67.6177 44.1202C67.6193 42.8176 67.3679 41.5466 66.8703 40.3426C66.5649 39.6036 66.1694 38.9025 65.6948 38.2587L65.6331 38.175C65.6189 38.1557 65.5875 38.1129 65.5271 38.1054C65.5043 38.1026 65.4775 38.1048 65.4458 38.1152ZM66.4411 67.0971C66.876 67.0977 67.2555 66.8548 67.4505 66.4974C67.5391 66.3349 67.5897 66.1488 67.5899 65.9511L67.6008 57.3959L65.3059 57.393L65.295 65.9482C65.2942 66.5809 65.808 67.0968 66.4411 67.0971ZM37.461 53.755C37.461 46.9008 43.0372 41.3246 49.8914 41.3246C56.7456 41.3246 62.3219 46.9008 62.3219 53.755C62.3219 60.6092 56.7455 66.1855 49.8914 66.1855C43.0373 66.1855 37.461 60.6092 37.461 53.755ZM39.1015 53.7549C39.1015 59.7045 43.9419 64.5448 49.8914 64.5448C55.841 64.5448 60.6813 59.7045 60.6813 53.7549C60.6813 47.8054 55.841 42.9651 49.8914 42.9651C43.9418 42.9651 39.1015 47.8054 39.1015 53.7549ZM37.1552 37.011C36.7019 37.0101 36.3343 37.3771 36.3336 37.8301L36.3245 43.952C36.323 44.906 35.6493 45.7074 34.7161 45.8787L34.1683 45.8779L34.1803 37.827C34.181 37.374 33.8142 37.0062 33.3612 37.0054C32.908 37.0043 32.5403 37.3715 32.5396 37.8245L32.5276 45.8754L31.9793 45.8747C31.0467 45.7004 30.3756 44.8971 30.377 43.9431L30.3861 37.8213C30.3868 37.3683 30.0201 37.0005 29.567 36.9997C29.1139 36.9985 28.7462 37.3658 28.7455 37.8188L28.7363 43.9406C28.7341 45.4723 29.676 46.7939 31.0577 47.315L30.4494 65.48L30.4492 65.4862C30.4291 66.262 30.7162 66.9956 31.2573 67.5518C31.7985 68.108 32.524 68.415 33.2994 68.4161L33.3144 68.4161C33.4342 68.4163 33.5528 68.4092 33.6697 68.395C34.3137 68.3169 34.9065 68.0241 35.3665 67.5508C35.9101 66.9917 36.1967 66.2545 36.1735 65.475L35.6336 47.322C37.017 46.8051 37.963 45.4862 37.9652 43.9544L37.9744 37.8326C37.975 37.3796 37.6082 37.0118 37.1552 37.011ZM34.5337 65.5239C34.5435 65.8556 34.4216 66.1693 34.1902 66.4073C33.9589 66.6453 33.6491 66.7766 33.3175 66.7756L33.3025 66.7756C32.9722 66.7751 32.6635 66.6445 32.4332 66.4078C32.2034 66.1717 32.0813 65.8605 32.0892 65.5314L32.6926 47.5164L33.3448 47.5174L33.3457 47.5174L33.3464 47.5174L33.9981 47.5183L34.5337 65.5239ZM56.0672 53.5841C56.0672 57.0083 53.2914 59.7841 49.8672 59.7841C46.4431 59.7841 43.6672 57.0083 43.6672 53.5841C43.6672 50.1599 46.4431 47.3841 49.8672 47.3841C53.2914 47.3841 56.0672 50.1599 56.0672 53.5841ZM57.8672 53.5841C57.8672 58.0024 54.2855 61.5841 49.8672 61.5841C45.449 61.5841 41.8672 58.0024 41.8672 53.5841C41.8672 49.1658 45.449 45.5841 49.8672 45.5841C54.2855 45.5841 57.8672 49.1658 57.8672 53.5841Z" />
+        </svg></div>
       <div>Ресторан</div>
     </div>
-    <div class="menu__block menu__text">
-      <img class="menu__side m-r-10" src="icons/icon-microphone.svg" alt="">
+    <div class="menu__block menu__text menu__icon">
+      <div class="menu__side m-r-10"> <svg width="100" height="100" viewBox="0 0 100 100" fill="#e3bf77"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M38.1085 65.6246L40.2363 67.7557C40.6348 68.1568 41.2804 68.1646 41.6824 67.7605C42.0844 67.3567 42.0882 66.7047 41.6898 66.304L39.5593 64.1736C38.7975 63.4117 38.9178 62.0038 39.8223 61.0994L41.5998 59.3218L42.0713 59.7934C42.2706 59.9927 42.5334 60.0939 42.7969 60.0939C43.0262 60.0939 43.2561 60.0175 43.4457 59.8627L56.1611 49.4784C56.3364 49.4919 56.5126 49.5008 56.6902 49.5008C58.4853 49.5008 60.173 48.8019 61.4422 47.5325C62.7115 46.2632 63.4107 44.5757 63.4107 42.7805C63.4107 40.9854 62.7116 39.2977 61.4422 38.0284C60.1731 36.7591 58.4854 36.06 56.6903 36.06C54.8953 36.06 53.2076 36.7591 51.9383 38.0283C50.669 39.2976 49.97 40.9853 49.97 42.7803C49.97 42.9579 49.9788 43.1343 49.9924 43.3096L39.6081 56.0248C39.2749 56.4327 39.305 57.0268 39.6773 57.3992L40.1489 57.8708L38.3715 59.6482C36.6512 61.3683 36.5331 64.0492 38.1085 65.6246ZM55.4121 44.0585C53.4301 42.0765 52.8819 39.9929 53.3876 39.4811C53.3881 39.4805 53.3887 39.48 53.3893 39.4794C54.2711 38.5976 55.4434 38.112 56.6903 38.112C57.9372 38.112 59.1097 38.5977 59.9914 39.4794C60.8732 40.3612 61.3588 41.5335 61.3588 42.7803C61.3588 44.0274 60.8731 45.1997 59.9914 46.0815C59.4826 46.5903 57.3967 46.0429 55.4121 44.0585ZM52.0267 42.9748C52.4931 43.8262 53.1426 44.6912 53.961 45.5095C54.7801 46.3286 55.6454 46.9773 56.4972 47.444C55.5571 47.2811 54.2585 46.9508 53.3892 46.0815C52.5515 45.2436 52.1897 43.9146 52.0267 42.9748ZM41.7844 56.6042L50.6555 45.7415C50.9774 46.3963 51.4073 47.0013 51.9382 47.5325C52.4694 48.0637 53.0745 48.4933 53.7293 48.8153L42.8665 57.6863L41.7844 56.6042Z" />
+        </svg></div>
       <div>Караоке</div>
     </div>
-    <div class="menu__block menu__text">
-      <img class="menu__side m-r-10" src="icons/icon-toy.svg" alt="">
+    <div class="menu__block menu__text menu__icon">
+      <div class="menu__side m-r-10"><svg width="100" height="100" viewBox="0 0 100 100" fill="#e3bf77"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M57.3337 48.875H61.3125C63.5525 48.875 65.375 50.6975 65.375 52.9375C65.375 55.1775 63.5525 57 61.3125 57H59.375V59.1301C60.1501 59.9666 60.625 61.085 60.625 62.3125C60.625 64.8972 58.5222 67 55.9375 67H43.4375C40.8528 67 38.75 64.8972 38.75 62.3125C38.75 61.085 39.2249 59.9666 40 59.1301V57H38.0625C35.8225 57 34 55.1775 34 52.9375C34 50.6975 35.8225 48.875 38.0625 48.875H42.0413C41.3386 47.6157 40.9375 46.1665 40.9375 44.625C40.9375 43.8889 41.0286 43.1628 41.2085 42.4575C40.0857 41.7158 39.375 40.4404 39.375 39.0625C39.375 36.8225 41.1975 35 43.4375 35C44.6592 35 45.79 35.541 46.5522 36.4536C47.5493 36.0693 48.6003 35.875 49.6875 35.875C50.7747 35.875 51.8257 36.0693 52.8228 36.4536C53.585 35.541 54.7158 35 55.9375 35C58.1775 35 60 36.8225 60 39.0625C60 40.4404 59.2893 41.7158 58.1665 42.4575C58.3464 43.1628 58.4375 43.8889 58.4375 44.625C58.4375 46.1665 58.0364 47.6157 57.3337 48.875ZM43.4375 36.875C42.2312 36.875 41.25 37.8562 41.25 39.0625C41.25 39.9666 41.8184 40.7891 42.6641 41.1089C43.1426 41.29 43.3877 41.821 43.2148 42.3025C42.9478 43.0464 42.8125 43.8279 42.8125 44.625C42.8125 48.0979 45.4011 50.9771 48.75 51.4358V49.3293L48.0183 48.9634C47.5552 48.7319 47.3674 48.1687 47.5991 47.7056C47.8306 47.2427 48.3938 47.0549 48.8567 47.2864L49.6875 47.7019L50.5183 47.2866C50.9814 47.0549 51.5444 47.2427 51.7759 47.7058C52.0076 48.1689 51.8198 48.7319 51.3567 48.9636L50.625 49.3293V51.4358C53.9739 50.9771 56.5625 48.0979 56.5625 44.625C56.5625 43.8279 56.4272 43.0464 56.1602 42.3025C55.9873 41.821 56.2324 41.29 56.7107 41.1089C57.5566 40.7891 58.125 39.9666 58.125 39.0625C58.125 37.8562 57.1438 36.875 55.9375 36.875C55.1174 36.875 54.3728 37.3284 53.9944 38.0581C53.759 38.5122 53.2026 38.6938 52.7446 38.4658C51.7898 37.991 50.7612 37.75 49.6875 37.75C48.6138 37.75 47.5852 37.991 46.6304 38.4658C46.1724 38.6936 45.616 38.5122 45.3806 38.0581C45.0022 37.3284 44.2576 36.875 43.4375 36.875ZM43.4375 59.5C41.8867 59.5 40.625 60.7617 40.625 62.3125C40.625 63.8633 41.8867 65.125 43.4375 65.125C44.9883 65.125 46.25 63.8633 46.25 62.3125C46.25 60.7617 44.9883 59.5 43.4375 59.5ZM53.125 62.3125C53.125 63.8633 54.3867 65.125 55.9375 65.125C57.4883 65.125 58.75 63.8633 58.75 62.3125C58.75 60.7617 57.4883 59.5 55.9375 59.5C54.3867 59.5 53.125 60.7617 53.125 62.3125ZM58.4375 55.125H61.3125C62.5188 55.125 63.5 54.1438 63.5 52.9375C63.5 51.7312 62.5188 50.75 61.3125 50.75H55.9297C54.3408 52.3689 52.1296 53.375 49.6875 53.375C47.2454 53.375 45.0342 52.3689 43.4453 50.75H38.0625C36.8562 50.75 35.875 51.7312 35.875 52.9375C35.875 54.1438 36.8562 55.125 38.0625 55.125H40.9375C41.4553 55.125 41.875 55.5447 41.875 56.0625V57.8938C42.364 57.7202 42.8896 57.625 43.4375 57.625C46.0222 57.625 48.125 59.7278 48.125 62.3125C48.125 63.3669 47.7749 64.3411 47.1851 65.125H52.1899C51.6001 64.3411 51.25 63.3669 51.25 62.3125C51.25 59.7278 53.3528 57.625 55.9375 57.625C56.4854 57.625 57.011 57.7202 57.5 57.8938V56.0625C57.5 55.5447 57.9197 55.125 58.4375 55.125ZM47.1875 44.5625C47.1875 45.0803 46.7678 45.5 46.25 45.5C45.7322 45.5 45.3125 45.0803 45.3125 44.5625C45.3125 44.0447 45.7322 43.625 46.25 43.625C46.7678 43.625 47.1875 44.0447 47.1875 44.5625ZM54.0625 44.5625C54.0625 45.0803 53.6428 45.5 53.125 45.5C52.6072 45.5 52.1875 45.0803 52.1875 44.5625C52.1875 44.0447 52.6072 43.625 53.125 43.625C53.6428 43.625 54.0625 44.0447 54.0625 44.5625Z" />
+        </svg> </div>
       <div>Детский клуб</div>
     </div>
-    <div class="menu__block menu__text">
-      <img class="menu__side m-r-10" src="icons/icon-fence .svg" alt="">
+    <div class="menu__block menu__text menu__icon">
+      <div class="menu__side m-r-10"> <svg width="100" height="100" viewBox="0 0 100 100" fill="#e3bf77"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M30 30C29.4477 30 29 30.4477 29 31V33.2676C28.4022 33.6134 28 34.2597 28 35C28 35.7403 28.4022 36.3866 29 36.7324V40.2676C28.4022 40.6134 28 41.2597 28 42C28 42.7403 28.4022 43.3866 29 43.7324V47.2676C28.4022 47.6134 28 48.2597 28 49C28 49.7403 28.4022 50.3866 29 50.7324V54.2676C28.4022 54.6134 28 55.2597 28 56C28 56.7403 28.4022 57.3866 29 57.7324V61C29 61.5523 29.4477 62 30 62C30.5523 62 31 61.5523 31 61V57.7324C31.1338 57.6551 31.2577 57.5626 31.3696 57.4575C35.2249 58.528 42.3874 60 50 60C57.6126 60 64.7751 58.528 68.6304 57.4575C68.7423 57.5626 68.8662 57.6551 69 57.7324V61C69 61.5523 69.4477 62 70 62C70.5523 62 71 61.5523 71 61V57.7324C71.5978 57.3866 72 56.7403 72 56C72 55.2597 71.5978 54.6134 71 54.2676V50.7324C71.5978 50.3866 72 49.7403 72 49C72 48.2597 71.5978 47.6134 71 47.2676V43.7324C71.5978 43.3866 72 42.7403 72 42C72 41.2597 71.5978 40.6134 71 40.2676V36.7324C71.5978 36.3866 72 35.7403 72 35C72 34.2597 71.5978 33.6134 71 33.2676V31C71 30.4477 70.5523 30 70 30C69.4477 30 69 30.4477 69 31V33.2676C68.5294 33.5398 68.18 33.9983 68.0526 34.5423C64.3448 35.5682 57.3829 37 50 37C42.6171 37 35.6552 35.5682 31.9474 34.5423C31.82 33.9983 31.4706 33.5398 31 33.2676V31C31 30.4477 30.5523 30 30 30ZM31.9474 55.5423C35.6552 56.5682 42.6171 58 50 58C57.3829 58 64.3448 56.5682 68.0526 55.5423C68.18 54.9983 68.5294 54.5398 69 54.2676V50.7324C68.8662 50.6551 68.7423 50.5626 68.6304 50.4575C64.7751 51.528 57.6126 53 50 53C42.3874 53 35.2249 51.528 31.3696 50.4575C31.2577 50.5626 31.1338 50.6551 31 50.7324V54.2676C31.4706 54.5398 31.82 54.9983 31.9474 55.5423ZM31 47.2676C31.4706 47.5398 31.82 47.9983 31.9474 48.5423C35.6552 49.5682 42.6171 51 50 51C57.3829 51 64.3448 49.5682 68.0526 48.5423C68.18 47.9983 68.5294 47.5398 69 47.2676V43.7324C68.8662 43.6551 68.7423 43.5626 68.6304 43.4575C64.7751 44.528 57.6126 46 50 46C42.3874 46 35.2249 44.528 31.3696 43.4575C31.2577 43.5626 31.1338 43.6551 31 43.7324V47.2676ZM31.9474 41.5423C35.6552 42.5682 42.6171 44 50 44C57.3829 44 64.3448 42.5682 68.0526 41.5423C68.18 40.9983 68.5294 40.5398 69 40.2676V36.7324C68.8662 36.6551 68.7423 36.5626 68.6304 36.4575C64.7751 37.528 57.6126 39 50 39C42.3874 39 35.2249 37.528 31.3696 36.4575C31.2577 36.5626 31.1338 36.6551 31 36.7324V40.2676C31.4706 40.5398 31.82 40.9983 31.9474 41.5423Z" />
+        </svg>
+      </div>
       <div>Веревочный парк</div>
     </div>
-    <div class="menu__block menu__text">
-      <img class="menu__side m-r-10" src="icons/icon-pool.svg" alt="">
+    <div class="menu__block menu__text menu__icon">
+      <div class="menu__side m-r-10"> <svg width="100" height="100" viewBox="0 0 100 100" fill="#e3bf77"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M63.6582 54.3684C64.4245 53.9864 65.293 53.5535 66.9539 53.5535C67.5365 53.5535 68.0088 54.0258 68.0088 54.6084C68.0088 55.191 67.5365 55.6634 66.9539 55.6634C65.7897 55.6634 65.2645 55.9252 64.5996 56.2566L64.5994 56.2567C63.8331 56.6387 62.9646 57.0716 61.3038 57.0716C59.6429 57.0716 58.7744 56.6387 58.0082 56.2567L58.0078 56.2565C57.3429 55.9251 56.8177 55.6634 55.6537 55.6634C54.4896 55.6634 53.9644 55.9252 53.2995 56.2567C52.5332 56.6387 51.6647 57.0716 50.0039 57.0716C48.3431 57.0716 47.4747 56.6387 46.7085 56.2567L46.7082 56.2566C46.0434 55.9252 45.5182 55.6634 44.3543 55.6634C43.1902 55.6634 42.665 55.9252 42.0001 56.2567C41.2339 56.6387 40.3654 57.0716 38.7046 57.0716C37.0438 57.0716 36.1754 56.6387 35.4091 56.2567C34.7442 55.9252 34.219 55.6634 33.0549 55.6634C32.4723 55.6634 32 55.191 32 54.6084C32 54.0258 32.4723 53.5535 33.0549 53.5535C34.7156 53.5535 35.584 53.9864 36.3502 54.3683L36.3504 54.3684L36.3506 54.3685C37.0154 54.6998 37.5406 54.9616 38.7046 54.9616C39.8687 54.9616 40.3939 54.6999 41.0588 54.3684C41.7044 54.0466 42.4226 53.6887 43.6258 53.5839V39.8547H33.0549C32.4723 39.8547 32 39.3823 32 38.7997C32 38.2171 32.4723 37.7448 33.0549 37.7448H43.6258V33.167C43.6258 31.4207 45.0456 30 46.7906 30C48.5356 30 49.9554 31.4207 49.9554 33.167V37.7448H54.2803V33.167C54.2803 31.4207 55.7001 30 57.445 30C59.1901 30 60.6098 31.4207 60.6098 33.167V37.7448H66.9539C67.5365 37.7448 68.0088 38.2171 68.0088 38.7997C68.0088 39.3823 67.5365 39.8547 66.9539 39.8547H56.3901V53.5846C57.5887 53.6903 58.3052 54.0473 58.9494 54.3684L58.95 54.3687C59.6148 54.7 60.14 54.9616 61.3038 54.9616C62.4679 54.9616 62.9932 54.6999 63.6582 54.3684ZM54.2803 45.774H45.7357V49.2967H54.2803V45.774ZM57.445 32.1099C56.8634 32.1099 56.3902 32.5841 56.3902 33.167V37.7448H58.4999V33.167C58.4999 32.5841 58.0267 32.1099 57.445 32.1099ZM46.7906 32.1099C46.209 32.1099 45.7357 32.5841 45.7357 33.167V37.7448H47.8455V33.167C47.8455 32.5841 47.3723 32.1099 46.7906 32.1099ZM54.2803 43.6641V39.8547H45.7357V43.6641H54.2803ZM50.004 54.9616C51.168 54.9616 51.6933 54.6999 52.3583 54.3684C52.8793 54.1087 53.4478 53.8255 54.2803 53.6708V51.4066H45.7357V53.6723C46.5639 53.8274 47.1305 54.1095 47.6498 54.3684L47.65 54.3685C48.3148 54.6998 48.8401 54.9616 50.004 54.9616ZM63.6582 59.2968C64.4245 58.9148 65.293 58.482 66.9539 58.482C67.5365 58.482 68.0088 58.9543 68.0089 59.5369C68.0089 60.1195 67.5365 60.5919 66.9539 60.5919C65.7897 60.5919 65.2644 60.8537 64.5994 61.1852C63.8332 61.5671 62.9647 62 61.3039 62C59.643 62 58.7745 61.5671 58.0083 61.1852L58.0081 61.185C57.3431 60.8536 56.8179 60.5919 55.6538 60.5919C54.4897 60.5919 53.9645 60.8537 53.2996 61.1851L53.2995 61.1852C52.5333 61.5671 51.6648 62 50.004 62C48.3433 62 47.475 61.5672 46.7087 61.1852L46.7085 61.1852L46.7083 61.185C46.0434 60.8536 45.5183 60.5919 44.3544 60.5919C43.1904 60.5919 42.6651 60.8537 42.0002 61.1851L42.0001 61.1852C41.2339 61.5671 40.3654 62 38.7047 62C37.0438 62 36.1754 61.5671 35.4092 61.1852L35.409 61.1851C34.7441 60.8537 34.2189 60.5919 33.0549 60.5919C32.4723 60.5919 32 60.1195 32 59.5369C32 58.9543 32.4723 58.482 33.0549 58.482C34.7155 58.482 35.584 58.9149 36.3502 59.2967L36.3503 59.2968L36.3504 59.2969C37.0153 59.6283 37.5406 59.8901 38.7046 59.8901C39.8686 59.8901 40.3939 59.6283 41.0588 59.2969L41.0589 59.2968C41.8251 58.9148 42.6936 58.482 44.3543 58.482C46.0151 58.482 46.8834 58.9148 47.6497 59.2968L47.6497 59.2968L47.6498 59.2969C48.3147 59.6283 48.84 59.8901 50.0039 59.8901C51.1679 59.8901 51.6932 59.6283 52.3581 59.2969L52.3582 59.2968C53.1244 58.9148 53.9929 58.482 55.6537 58.482C57.3146 58.482 58.183 58.9148 58.9493 59.2968L58.9494 59.2968L58.9496 59.2969C59.6145 59.6283 60.1397 59.8901 61.3038 59.8901C62.4679 59.8901 62.9932 59.6283 63.6582 59.2968Z" />
+        </svg> </div>
       <div>Бассеин</div>
     </div>
-    <div class="menu__block menu__text">
-      <img class="menu__side m-r-10" src="icons/icon-bed .svg" alt="">
+    <div class="menu__block menu__text menu__icon">
+      <div class="menu__side m-r-10"> <svg width="100" height="100" viewBox="0 0 100 100" fill="#e3bf77"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M35.7168 45.1109L41.4993 39.3284L47.2817 45.1109L43.2593 49.2078L42.7099 49C42.5373 49.1727 42.3608 49.3186 42.1823 49.4328L41.4997 49L40.6635 49.5301C40.5373 49.4557 40.4123 49.3579 40.2893 49.2349L39.8501 49.3201L35.7168 45.1109ZM39.8501 49.3201L37.5448 49.7674L34.3026 46.5251C33.5215 45.7441 33.5215 44.4777 34.3026 43.6967L40.0851 37.9142C40.8661 37.1332 42.1324 37.1332 42.9135 37.9142L48.696 43.6967C49.477 44.4777 49.477 45.7441 48.696 46.5251L45.2575 49.9635L43.2593 49.2078L42.7099 49.7674L42.1823 49.4328C41.6803 49.7539 41.1617 49.8239 40.6635 49.5301L40.2893 49.7674L39.8501 49.3201ZM53.7157 45.1438L59.4982 39.3613L65.2806 45.1438L61.2582 49.2407L60.7088 49.0329C60.5362 49.2055 60.3597 49.3515 60.1812 49.4657L59.4986 49.0329L58.6624 49.563C58.5361 49.4886 58.4112 49.3908 58.2882 49.2678L57.849 49.353L53.7157 45.1438ZM57.849 49.353L55.5437 49.8003L52.3015 46.558C51.5204 45.777 51.5204 44.5106 52.3015 43.7296L58.0839 37.9471C58.865 37.1661 60.1313 37.1661 60.9124 37.9471L66.6949 43.7296C67.4759 44.5106 67.4759 45.777 66.6949 46.558L63.2564 49.9964L61.2582 49.2407L60.7088 49.8003L60.1812 49.4657C59.6792 49.7868 59.1606 49.8568 58.6624 49.563L58.2882 49.8003L57.849 49.353Z" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M69 36H32V48H69V36ZM30 36V48C28.8954 48 28 48.8954 28 50V57C28 57.5523 28.4477 58 29 58H30V62C30 62.5523 30.4477 63 31 63H32V65C32 65.5523 32.4477 66 33 66C33.5523 66 34 65.5523 34 65V63H67V65C67 65.5523 67.4477 66 68 66C68.5523 66 69 65.5523 69 65V63H70C70.5523 63 71 62.5523 71 62V58H72C72.5523 58 73 57.5523 73 57V50C73 48.8954 72.1046 48 71 48V36C71 34.8954 70.1046 34 69 34H32C30.8954 34 30 34.8954 30 36ZM69 58H32V61H69V58ZM70 56H71V50H69H32H30V56H31H70Z" />
+        </svg></div>
       <div>Отель</div>
     </div>
 
     <div class="social">
       <div class="social__block text text-16 text--grey text--semibold">
-        <img class="social__link m-r-35" src="icons/icon-vk.svg" alt=""> ВКотакте
+        <img class="social__link m-r-35" src="icons/icon-vk.svg" alt=""> ВКонтакте
       </div>
 
       <div class="social__block text text-16 text--grey text--semibold">
@@ -115,7 +142,7 @@
                 <div class="button-area">
                   <button class="button-area__button ui-button ui-button--fill-golden text">Забронировать
                   </button>
-                  <button class="button-area__button ui-button button-transparent text">Подробнее </button>
+                  <button class="button-area__button ui-button ui-button__white-border button-transparent text ">Подробнее </button>
                 </div>
                 <button class="m-swiper-button-prev"> <img src="icons/icon-left.svg"> </button>
                 <button class="m-swiper-button-next"> <img src="icons/icon-right.svg"> </button>
@@ -239,41 +266,41 @@
         </div>
         <div class="pagination-slider container">
           <div class="pagination-slider__bottom">
-            <div class="pagination-slider__block">
+            <div class="pagination-slider__block active">
               <img class="pagination-slider__icon" src="icons/icon-dishes-bottom.svg" alt="">
-              <div class="text text--bold">Ресторан</div>
+              <div class="pagination-slider__text active">Ресторан</div>
               <img class="pagination-slider__icon" src="icons/line.svg" alt="">
             </div>
             <div class="pagination-slider__block">
               <img class="pagination-slider__icon" src="icons/icon-microphone-bottom.svg" alt="">
-              <div class="text text--bold"> Караоке</div>
+              <div class="pagination-slider__text "> Караоке</div>
               <img class="pagination-slider__icon" src="icons/line.svg" alt="">
             </div>
             <div class="pagination-slider__block">
               <img class="pagination-slider__icon" src="icons/icon-toy-bottom.svg" alt="">
-              <div class="text text--bold">Детский клуб</div>
+              <div class="pagination-slider__text ">Детский клуб</div>
               <img class="pagination-slider__icon" src="icons/line.svg" alt="">
             </div>
             <div class="pagination-slider__block">
               <img class="pagination-slider__icon" src="icons/icon-fence-bottom.svg" alt="">
-              <div class="text text--bold">Веревочный парк</div>
+              <div class="pagination-slider__text">Веревочный парк</div>
               <img class="pagination-slider__icon" src="icons/line.svg" alt="">
             </div>
             <div class="pagination-slider__block">
               <img class="pagination-slider__icon" src="icons/icon-pool-bottom.svg" alt="">
-              <div class="text text--bold">Бассейн</div>
+              <div class="pagination-slider__text ">Бассейн</div>
               <img class="pagination-slider__icon" src="icons/line.svg" alt="">
             </div>
             <div class="pagination-slider__block">
               <img class="pagination-slider__icon-last " src="icons/icon-hotel-bottom.svg" alt="">
-              <div class="text text--bold ">Отель</div>
+              <div class="pagination-slider__text ">Отель</div>
               <img class="pagination-slider__icon-last" src="icons/line.svg" alt="">
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="background-grey p-t-80">
+    <section class="section-grey">
       <div class="container">
         <div class="slider-events swiper-events">
           <div class="block-header m-b-55">
@@ -328,115 +355,257 @@
               </div>
             </div>
           </div>
-          <div class="swiper-pagination-events m-t-40">
-            <img src="icons/icon-pagination.svg" alt="" class="pagination-stripe">
-            <img src="icons/icon-pagination-point.svg" alt="" class="pagination-point">
-          </div>
+          <div class="my-scrollbar swiper-scrollbar"></div>
         </div>
+      </div>
       </div>
     </section>
     <section class="section-white">
       <div class="container">
         <div class="text text--bold text-30 text--black m-b-45">Наши залы</div>
-        <div class="block-card">
-          <div class="card-room">
-            <img class="card-room__img" src="img/img-room-big.jpg" alt="">
-            <div class="card-room__content">
-              <div>
-                <div class="block-title text text--bold text-10">до 160 гостей</div>
+        <div class="tabs flex-display">
+          <div class="tabs__nav">
+          <button class="tabs__nav-btn active" data-tab="#tab-all"> Все</button>
+          <button class="tabs__nav-btn" data-tab="#tab-banquet"> Банкетные</button>
+          <button class="tabs__nav-btn" data-tab="#tab-common">Общие</button>
+          <button class="tabs__nav-btn" data-tab="#tab-individual"> Индивидуальные</button>
+          <button class="tabs__nav-btn" data-tab="#tab-karaoke">Караоке</button>
+          </div>
+        </div>
+        <img class="icon-line-slaider" src="icons/icon-line-slider.svg" alt="">
+
+
+       
+        <div class="slider-rooms">
+         
+            <div id="tab-all" class=" slider-rooms__slide active block-card ">
+              <div class="card-room">
+                <img class="card-room__img" src="img/img-room-big.jpg" alt="">
+                <div class="card-room__content">
+                  <div>
+                    <div class="block-title text text--bold text-10">до 160 гостей</div>
+                  </div>
+                  <div class="card-room__info">
+                    <div class="text text-20 text--semibold m-b-10"> Зал большой банкетный</div>
+                    <div class="text  text-card "> Роскошный банкетный зал в мягком классическом дизайне.</div>
+                  </div>
+                </div>
               </div>
-              <div class="card-room__info">
-                <div class="text text-20 text--semibold m-b-10"> Зал большой банкетный</div>
-                <div class="text  text-card "> Роскошный банкетный зал в мягком классическом дизайне.</div>
+              <div class="card-room">
+                <img class="card-room__img" src="img/img-room-gold.jpg" alt="">
+                <div class="card-room__content">
+                  <div>
+                    <div class="block-title text text--bold text-10">до 160 гостей</div>
+                  </div>
+                  <div class="card-room__info">
+                    <div class="text text-20 text--semibold m-b-10"> Зал Золотая Комната</div>
+                    <div class="text  text-card "> Золотая комната в золотом убранстве и круглым столом на 12 человек.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-room">
+                <img class="card-room__img" src="img/img-room-flowers.jpg" alt="">
+                <div class="card-room__content">
+                  <div>
+                    <div class="block-title text text--bold text-10">до 160 гостей</div>
+                  </div>
+                  <div class="card-room__info">
+                    <div class="text text-20 text--semibold m-b-10">Зал Оранжерея</div>
+                    <div class="text  text-card ">Настоящая оранжерея с панорамными окнами, мягкими диванами.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-room">
+                <img class="card-room__img" src="img/img-room-living.jpg" alt="">
+                <div class="card-room__content">
+                  <div>
+                    <div class="block-title text text--bold text-10">до 160 гостей</div>
+                  </div>
+                  <div class="card-room__info">
+                    <div class="text text-20 text--semibold m-b-10"> Зал Гостиная</div>
+                    <div class="text  text-card ">Оригинальное по дизайну пространство со стеклянной стеной в сторону
+                      бассейна.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-room">
+                <img class="card-room__img" src="img/img-room-loft.jpg" alt="">
+                <div class="card-room__content">
+                  <div>
+                    <div class="block-title text text--bold text-10">до 160 гостей</div>
+                  </div>
+                  <div class="card-room__info">
+                    <div class="text text-20 text--semibold m-b-10"> Зал Лофт</div>
+                    <div class="text  text-card "> Зал в модном стиле лофт для индивидуальных мероприятий.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-room">
+                <img class="card-room__img" src="img/img-room-karaoke.jpg" alt="">
+                <div class="card-room__content">
+                  <div>
+                    <div class="block-title text text--bold text-10">до 160 гостей</div>
+                  </div>
+                  <div class="card-room__info">
+                    <div class="text text-20 text--semibold m-b-10">Караоке зал «Гнездо» </div>
+                    <div class="text  text-card "> Роскошный деревянный интерьер в стиле австрийского шале.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-room">
+                <img class="card-room__img" src="img/img-room-hollow.jpg" alt="">
+                <div class="card-room__content">
+                  <div>
+                    <div class="block-title text text--bold text-10">до 160 гостей</div>
+                  </div>
+                  <div class="card-room__info">
+                    <div class="text text-20 text--semibold m-b-10"> Караоке зал «Дупло»</div>
+                    <div class="text  text-card ">Роскошный деревянный интерьер в стиле австрийского шале.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-room">
+                <img class="card-room__img" src="img/img-room-dances.jpg" alt="">
+                <div class="card-room__content">
+                  <div>
+                    <div class="block-title text text--bold text-10">до 160 гостей</div>
+                  </div>
+                  <div class="card-room__info">
+                    <div class="text text-20 text--semibold m-b-10">Dance караоке-бар «Какаду»</div>
+                    <div class="text text-card ">Модный стильный фьюжен дизайн.</div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card-room">
-            <img class="card-room__img" src="img/img-room-gold.jpg" alt="">
-            <div class="card-room__content">
-              <div>
-                <div class="block-title text text--bold text-10">до 160 гостей</div>
+
+            <div  id="tab-banquet" class="slider-rooms__slide block-card ">
+              
+              <div class="card-room">
+                <img class="card-room__img" src="img/img-room-gold.jpg" alt="">
+                <div class="card-room__content">
+                  <div>
+                    <div class="block-title text text--bold text-10">до 160 гостей</div>
+                  </div>
+                  <div class="card-room__info">
+                    <div class="text text-20 text--semibold m-b-10"> Зал Золотая Комната</div>
+                    <div class="text  text-card "> Золотая комната в золотом убранстве и круглым столом на 12 человек.
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="card-room__info">
-                <div class="text text-20 text--semibold m-b-10"> Зал Золотая Комната</div>
-                <div class="text  text-card "> Золотая комната в золотом убранстве и круглым столом на 12 человек.</div>
+              <div class="card-room">
+                <img class="card-room__img" src="img/img-room-flowers.jpg" alt="">
+                <div class="card-room__content">
+                  <div>
+                    <div class="block-title text text--bold text-10">до 160 гостей</div>
+                  </div>
+                  <div class="card-room__info">
+                    <div class="text text-20 text--semibold m-b-10">Зал Оранжерея</div>
+                    <div class="text  text-card ">Настоящая оранжерея с панорамными окнами, мягкими диванами.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-room">
+                <img class="card-room__img" src="img/img-room-living.jpg" alt="">
+                <div class="card-room__content">
+                  <div>
+                    <div class="block-title text text--bold text-10">до 160 гостей</div>
+                  </div>
+                  <div class="card-room__info">
+                    <div class="text text-20 text--semibold m-b-10"> Зал Гостиная</div>
+                    <div class="text  text-card ">Оригинальное по дизайну пространство со стеклянной стеной в сторону
+                      бассейна.</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div id="tab-common"  class="slider-rooms__slide block-card ">
+              <div class="card-room">
+                <img class="card-room__img" src="img/img-room-big.jpg" alt="">
+                <div class="card-room__content">
+                  <div>
+                    <div class="block-title text text--bold text-10">до 160 гостей</div>
+                  </div>
+                  <div class="card-room__info">
+                    <div class="text text-20 text--semibold m-b-10"> Зал большой банкетный</div>
+                    <div class="text  text-card "> Роскошный банкетный зал в мягком классическом дизайне.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-room">
+                <img class="card-room__img" src="img/img-room-gold.jpg" alt="">
+                <div class="card-room__content">
+                  <div>
+                    <div class="block-title text text--bold text-10">до 160 гостей</div>
+                  </div>
+                  <div class="card-room__info">
+                    <div class="text text-20 text--semibold m-b-10"> Зал Золотая Комната</div>
+                    <div class="text  text-card "> Золотая комната в золотом убранстве и круглым столом на 12 человек.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-room">
+                <img class="card-room__img" src="img/img-room-flowers.jpg" alt="">
+                <div class="card-room__content">
+                  <div>
+                    <div class="block-title text text--bold text-10">до 160 гостей</div>
+                  </div>
+                  <div class="card-room__info">
+                    <div class="text text-20 text--semibold m-b-10">Зал Оранжерея</div>
+                    <div class="text  text-card ">Настоящая оранжерея с панорамными окнами, мягкими диванами.</div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card-room">
-            <img class="card-room__img" src="img/img-room-flowers.jpg" alt="">
-            <div class="card-room__content">
-              <div>
-                <div class="block-title text text--bold text-10">до 160 гостей</div>
+
+            <div  id="tab-individual"  class="slider-rooms__slide block-card ">
+              <div class="card-room">
+                <img class="card-room__img" src="img/img-room-hollow.jpg" alt="">
+                <div class="card-room__content">
+                  <div>
+                    <div class="block-title text text--bold text-10">до 160 гостей</div>
+                  </div>
+                  <div class="card-room__info">
+                    <div class="text text-20 text--semibold m-b-10"> Караоке зал «Дупло»</div>
+                    <div class="text  text-card ">Роскошный деревянный интерьер в стиле австрийского шале.</div>
+                  </div>
+                </div>
               </div>
-              <div class="card-room__info">
-                <div class="text text-20 text--semibold m-b-10">Зал Оранжерея</div>
-                <div class="text  text-card ">Настоящая оранжерея с панорамными окнами, мягкими диванами.</div>
-              </div>
-            </div>
-          </div>
-          <div class="card-room">
-            <img class="card-room__img" src="img/img-room-living.jpg" alt="">
-            <div class="card-room__content">
-              <div>
-                <div class="block-title text text--bold text-10">до 160 гостей</div>
-              </div>
-              <div class="card-room__info">
-                <div class="text text-20 text--semibold m-b-10"> Зал Гостиная</div>
-                <div class="text  text-card ">Оригинальное по дизайну пространство со стеклянной стеной в сторону
-                  бассейна.</div>
-              </div>
-            </div>
-          </div>
-          <div class="card-room">
-            <img class="card-room__img" src="img/img-room-loft.jpg" alt="">
-            <div class="card-room__content">
-              <div>
-                <div class="block-title text text--bold text-10">до 160 гостей</div>
-              </div>
-              <div class="card-room__info">
-                <div class="text text-20 text--semibold m-b-10"> Зал Лофт</div>
-                <div class="text  text-card "> Зал в модном стиле лофт для индивидуальных мероприятий.</div>
+              <div class="card-room">
+                <img class="card-room__img" src="img/img-room-dances.jpg" alt="">
+                <div class="card-room__content">
+                  <div>
+                    <div class="block-title text text--bold text-10">до 160 гостей</div>
+                  </div>
+                  <div class="card-room__info">
+                    <div class="text text-20 text--semibold m-b-10">Dance караоке-бар «Какаду»</div>
+                    <div class="text text-card ">Модный стильный фьюжен дизайн.</div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card-room">
-            <img class="card-room__img" src="img/img-room-karaoke.jpg" alt="">
-            <div class="card-room__content">
-              <div>
-                <div class="block-title text text--bold text-10">до 160 гостей</div>
-              </div>
-              <div class="card-room__info">
-                <div class="text text-20 text--semibold m-b-10">Караоке зал «Гнездо» </div>
-                <div class="text  text-card "> Роскошный деревянный интерьер в стиле австрийского шале.</div>
-              </div>
-            </div>
-          </div>
-          <div class="card-room">
-            <img class="card-room__img" src="img/img-room-hollow.jpg" alt="">
-            <div class="card-room__content">
-              <div>
-                <div class="block-title text text--bold text-10">до 160 гостей</div>
-              </div>
-              <div class="card-room__info">
-                <div class="text text-20 text--semibold m-b-10"> Караоке зал «Дупло»</div>
-                <div class="text  text-card ">Роскошный деревянный интерьер в стиле австрийского шале.</div>
-              </div>
-            </div>
-          </div>
-          <div class="card-room">
-            <img class="card-room__img" src="img/img-room-dances.jpg" alt="">
-            <div class="card-room__content">
-              <div>
-                <div class="block-title text text--bold text-10">до 160 гостей</div>
-              </div>
-              <div class="card-room__info">
-                <div class="text text-20 text--semibold m-b-10">Dance караоке-бар «Какаду»</div>
-                <div class="text text-card ">Модный стильный фьюжен дизайн.</div>
+
+            <div id="tab-karaoke" class="slider-rooms__slide block-card ">
+              <div class="card-room">
+                <img class="card-room__img" src="img/img-room-dances.jpg" alt="">
+                <div class="card-room__content">
+                  <div>
+                    <div class="block-title text text--bold text-10">до 160 гостей</div>
+                  </div>
+                  <div class="card-room__info">
+                    <div class="text text-20 text--semibold m-b-10">Dance караоке-бар «Какаду»</div>
+                    <div class="text text-card ">Модный стильный фьюжен дизайн.</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </section>
     <section class="section-orange">
@@ -517,10 +686,11 @@
             <div class="text text--l-h-21 m-b-20">
               Подпишитесь на рассылку Птицы и Пчёлы и будьте в курсе всех новостей и событий
             </div>
-            <div class="footer__e-mail m-b-10 ">
-              <div class="text text--grey"> E-mail: </div>
+            <div class="footer__e-mail ">
+              <input class="input-email" type="text" name="first-text-field" placeholder="E-mail" >
               <img class="footer__send" src="icons/icon-send .svg" alt="">
             </div>
+            
             <img src="icons/icon-line-grey.svg" alt="">
           </div>
         </div>
