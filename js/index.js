@@ -5,10 +5,13 @@ const swiper = new Swiper('.swiper', {
   pagination: {
     el: '.pagination-slider__bottom',
     clickable: true,
-    type: 'custom',
-    bulletClass: 'pagination-slider__block'
+    type: 'string',
+    bulletClass: 'pagination-slider__block',
+    bulletActiveClass:'active',
 
   },
+
+  
 
   navigation: {
     nextEl: '.m-swiper-button-next',
@@ -59,22 +62,23 @@ tabsBtn.forEach(function (item) {
   });
 });
 
+
+
 const btn = document.querySelectorAll(".pagination-slider__block")
 
 btn.forEach(function (item) {
-  item.addEventListener('click', function () {
-    let bntHover = item;
+item.addEventListener('click', function () {
+let bntHover = item;
 
 
-    btn.forEach(function (item) {
-      item.classList.remove('active');
-    });
+btn.forEach(function (item) {
+item.classList.remove('active');
+});
 
-    bntHover.classList.add('active')
+bntHover.classList.add('active')
 
-    
-    });
-  });
 
+});
+});
 
 
