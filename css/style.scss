@@ -4,6 +4,27 @@ body {
   padding-left: 100px;
   font-weight: 400;
   overflow-x: hidden;
+
+  &.body-active {
+    overflow: hidden;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    .menu-adaptive {
+      transform: translateX(400px);
+    }
+  }
+  
 }
 
 .display-wrap {
@@ -621,23 +642,15 @@ body {
   margin: 0;
   top: 0;
   left: -400px;
-  transition: left 0.2s;
+  transition: transform 0.2s;
   z-index: 10;
-  -webkit-transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-
-  /*&__button-cross {
-    margin-bottom: 20px;
-    width: 15px;
-    height: 15px;
-  }*/
 
   &__nav {
     margin-bottom: 20px;
     cursor: pointer;
   }
 
-  &__icon {
+  &__icon { 
     display: flex;
     max-width: 350px;
     justify-content: space-between;
@@ -651,10 +664,16 @@ body {
   }
 }
 
+.active-adaptive {
+  left: 0px;
+}
+
 @media (max-width: 1270px) {
   .container {
     padding: 0px 40px 0 40px;
   }
+
+  
 
   .heading {
     left: 0;
@@ -708,18 +727,6 @@ body {
 
   body {
     padding-left: 0px;
-  }
-
-  .menu-768 {
-    position: absolute;
-    top: 20px;
-    left: 10px;
-    cursor: pointer;
-    transition: left 0.23s;
-    z-index: 11;
-    width: 30px;
-    -webkit-transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
   }
 
   .card-room {
@@ -785,39 +792,56 @@ body {
       margin: 10px;
     }
   }
-
-  .hidden-menu-ticker:checked ~ .menu-768 {
-    left: 30px;
-  }
-  .hidden-menu-ticker:checked ~ .menu-adaptive {
-    left: 0;
-  }
-
-  .hidden-menu-ticker:checked ~ .menu-768 img.open {
-    display: none;
-  }
-
-  .hidden-menu-ticker:checked ~ .menu-768 img.close {
-    margin-top: 10px;
-    display: block;
-    
-  }
-
-  .close {
-    display: none;
-  }
-
-  .open {
-    margin: 40px 0 0 40px;
-  }
 }
 
 @media (min-width: 1271px) {
-  .menu-768 {
+  .btn-menu {
     display: none;
   }
 
   .menu-adaptive {
     display: none;
+  }
+}
+
+.btn-menu {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  left: 29px;
+  z-index: 50;
+
+  &__line {
+    width: 28px;
+    height: 2px;
+    margin-top: 4px;
+    background: rgb(255, 255, 255);
+    position: relative;
+    transition: 0.2s;
+  }
+
+  &--active {
+    .btn-menu {
+      &__line {
+        &:first-child {
+          transform: rotate(45deg);
+          top: 8px;
+          background-color: #e3bf77;
+        }
+
+        &:nth-child(2) {
+          transform: rotate(-45deg);
+          top: 2px;
+          background-color: #e3bf77;
+        }
+
+        &:nth-child(3) {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+    }
   }
 }

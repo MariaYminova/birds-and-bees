@@ -70,15 +70,34 @@ btn.forEach(function (item) {
 item.addEventListener('click', function () {
 let bntHover = item;
 
-
 btn.forEach(function (item) {
 item.classList.remove('active');
 });
 
 bntHover.classList.add('active')
-
-
 });
 });
 
 
+document.querySelector('.btn-menu').addEventListener('click', function() {
+	this.classList.toggle("btn-menu--active")
+})
+
+let btnMenu = document.querySelector(".btn-menu")
+let menuAdaptive = document.querySelector(".menu-adaptive")
+let bodyAdaptive = document.querySelector("body")
+
+
+btnMenu.addEventListener('click', function (event) {
+  event.stopPropagation();
+  //menuAdaptive.classList.toggle('active-adaptive');
+  bodyAdaptive.classList.toggle('body-active');
+});
+
+menuAdaptive.addEventListener('click', function (event) {
+  event.stopPropagation();
+});
+
+bodyAdaptive.addEventListener('click', function () {
+  bodyAdaptive.classList.remove('body-active');
+});
