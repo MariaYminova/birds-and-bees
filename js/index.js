@@ -8,10 +8,9 @@ const swiper = new Swiper('.swiper', {
     type: 'string',
     bulletClass: 'pagination-slider__block',
     bulletActiveClass:'active',
+    clickable: true,
 
   },
-
-  
 
   navigation: {
     nextEl: '.m-swiper-button-next',
@@ -22,9 +21,21 @@ const swiper = new Swiper('.swiper', {
 });
 
 const swiperEvents = new Swiper(".swiper-events", {
-  slidesPerView: 3,
-  spaceBetween: 20,
-  centeredSlides: false,
+  slidesPerView: 1,
+  spaceBetween: 10,
+  
+  breakpoints: {
+    
+  500: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    
+    940: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    }
+  },
 
   scrollbar: {
     el: ".my-scrollbar",
@@ -37,6 +48,26 @@ const swiperEvents = new Swiper(".swiper-events", {
     prevEl: '.events-swiper-button-prev',
   },
 
+});
+
+const swiperPhoto = new Swiper('.swiper-photo', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+ 
+  breakpoints: {
+    
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    
+    940: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    }
+  },
+  
+ 
 });
 
 
@@ -90,7 +121,7 @@ let bodyAdaptive = document.querySelector("body")
 
 btnMenu.addEventListener('click', function (event) {
   event.stopPropagation();
-  //menuAdaptive.classList.toggle('active-adaptive');
+ 
   bodyAdaptive.classList.toggle('body-active');
 });
 
@@ -101,3 +132,10 @@ menuAdaptive.addEventListener('click', function (event) {
 bodyAdaptive.addEventListener('click', function () {
   bodyAdaptive.classList.remove('body-active');
 });
+
+bodyAdaptive.addEventListener('click', function () {
+  btnMenu.classList.remove('btn-menu--active');
+});
+
+
+

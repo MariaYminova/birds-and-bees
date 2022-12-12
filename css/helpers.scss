@@ -1,6 +1,5 @@
 .text {
-  
-color: #ffffff;
+  color: #ffffff;
   font-size: 14px;
   line-height: 21px;
 
@@ -30,6 +29,7 @@ color: #ffffff;
   &-30 {
     font-size: 30px;
     color: #ffffff;
+    line-height: 30px;
   }
 
   &-40 {
@@ -63,7 +63,7 @@ color: #ffffff;
   }
 
   &--orange {
-    color:  #E3BF77;
+    color: #e3bf77;
   }
 
   &--white {
@@ -74,7 +74,9 @@ color: #ffffff;
     line-height: 21px;
   }
 }
-
+ @media max-width  {
+  
+ }
 .background {
   &-grey {
     background-color: #f9f9f9;
@@ -188,8 +190,6 @@ color: #ffffff;
   &-t-40 {
     margin-top: 40px;
   }
-
- 
 }
 
 .p {
@@ -197,5 +197,3 @@ color: #ffffff;
     padding-top: 80px;
   }
 }
-
-

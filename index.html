@@ -16,8 +16,6 @@
 </head>
 
 <body>
-  
-  
   <div class="btn-menu">
     <div class="btn-menu__line"></div>
     <div class="btn-menu__line"></div>
@@ -124,7 +122,7 @@
       <div class="container">
         <div class="heading__wrapper">
           <div class="heading__left">
-
+           
             <div class="heading__contacts">
               <a class="heading__number text text--bold" href="tel:7(925) 225-38-38">7(925) 225-38-38</a>
               <a class="heading__number text-12" href="tel:7(495) 225-38-38"> 7(495) 225-38-38</a>
@@ -132,7 +130,7 @@
             <img class="icon-USD" src="icons/icon-UDS.svg" alt="">
           </div>
           <div class="heading__center">
-            <img src="img/img-logo.svg" alt="">
+            <img class="heading-logo" src="img/img-logo.svg" alt="">
           </div>
           <div class="heading__right">
             <img class="icon-3d" src="icons/icon-3d.svg" alt="">
@@ -305,7 +303,7 @@
         </div>
         <div class="pagination-slider container">
           <div class="pagination-slider__bottom">
-            <div class="pagination-slider__block active">
+            <div class="pagination-slider__block  ">
               <img class="pagination-slider__icon" src="icons/icon-dishes-bottom.svg" alt="">
               <div class="pagination-slider__text">Ресторан</div>
               <img class="pagination-slider__icon" src="icons/line.svg" alt="">
@@ -344,14 +342,14 @@
         <div class="slider-events swiper-events">
           <div class="block-header m-b-55">
             <div class="text-30 text--semibold text--black"> Мероприятия у нас</div>
-            <div>
+            <div class="block-header__btn">
               <button class="events-swiper-button-prev"> <img src="icons/icon-arrows-left-black.svg"> </button>
               <button class="events-swiper-button-next"> <img src="icons/icon-arrows-right-black.svg"> </button>
             </div>
           </div>
 
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper-slide-events ">
               <div class="slider-events-img m-b-30"><a href="">
                   <img class="wrapper-img" src="img/img-events-1.png" alt=""></a>
               </div>
@@ -427,10 +425,7 @@
         </div>
         <img class="icon-line-slaider" src="icons/icon-line-slider.svg" alt="">
 
-
-
         <div class="slider-rooms">
-
           <div id="tab-all" class=" slider-rooms__slide active block-card ">
             <div class="card-room"><a href="">
                 <img class="card-room__img wrapper-img" src="img/img-room-big.jpg" alt="">
@@ -686,7 +681,7 @@
           <div class="text text-20 m-b-30 section-orange__text ">С другой стороны дальнейшее развитие различных форм
             деятельности позволяет оценить значение форм развития. </div>
           <div>
-            <button class="button-area__button ui-button ui-button--fill-white text text--orange "> Посмотреть меню
+            <button class=" ui-button ui-button--fill-white text text--orange "> Посмотреть меню
             </button>
           </div>
         </div>
@@ -696,38 +691,42 @@
       <div class="container">
         <div class="block-header">
           <div class="text text--bold text-30 text--black m-b-50"> Последние фотоотчеты</div>
-          <button class="ui-button ui-button--small ui-button--border-golden text text--black">
+          <button class="button-photo ui-button ui-button--small ui-button--border-golden text text--black">
             Все фотоотчеты
           </button>
         </div>
 
-
-        <div class="flex-display">
-          <div class="card-photo"><a href="">
-              <img class="card-photo__img wrapper-img" src="img/img-owl.jpg" alt="">
-              <div class="card-photo__content">
-                <div class="text text-12 text--grey m-b-5"> 31 мая</div>
-                <div class="text text-16 text--semibold"> День рождения Софии в стиле Гарри Поттера!</div>
-              </div>
-            </a>
-          </div>
-          <div class="card-photo"><a href="">
-              <img class="card-photo__img wrapper-img" src="img/img-children.jpg" alt="">
-              <div class="card-photo__content">
-                <div class="text text-12 text--grey m-b-5"> 26 мая</div>
-                <div class="text text-16 text--semibold"> Выпускной начальной школы</div>
-              </div>
-            </a>
-          </div>
-          <div class="card-photo"><a href="">
-              <img class="card-photo__img wrapper-img" src="img/img-holiday.jpg" alt="">
-              <div class="card-photo__content">
-                <div class="text text-12 text--grey m-b-5"> 9 мая</div>
-                <div class="text text-16 text--semibold"> Праздник Дня Победы</div>
-              </div>
-            </a>
+        <div class="flex-display swiper-photo">
+          <div class="swiper-wrapper">
+            <div class="card-photo swiper-slide"><a href="">
+                <img class="card-photo__img wrapper-img" src="img/img-owl.jpg" alt="">
+                <div class="card-photo__content">
+                  <div class="text text-12 text--grey m-b-5"> 31 мая</div>
+                  <div class="text text-16 text--semibold m-r-15"> День рождения Софии в стиле Гарри Поттера!</div>
+                </div>
+              </a>
+            </div>
+            <div class="card-photo swiper-slide"><a href="">
+                <img class="card-photo__img wrapper-img" src="img/img-children.jpg" alt="">
+                <div class="card-photo__content">
+                  <div class="text text-12 text--grey m-b-5"> 26 мая</div>
+                  <div class="text text-16 text--semibold m-r-15"> Выпускной начальной школы</div>
+                </div>
+              </a>
+            </div>
+            <div class="card-photo swiper-slide"><a href="">
+                <img class="card-photo__img wrapper-img" src="img/img-holiday.jpg" alt="">
+                <div class="card-photo__content">
+                  <div class="text text-12 text--grey m-b-5"> 9 мая</div>
+                  <div class="text text-16 text--semibold m-r-15"> Праздник Дня Победы</div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
+        <button class="button-photo-mob ui-button ui-button--small ui-button--border-golden text text--black">
+          Все фотоотчеты
+        </button>
       </div>
     </section>
   </main>
