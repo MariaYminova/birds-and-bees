@@ -1,15 +1,12 @@
-
+const btn = document.querySelectorAll(".pagination-slider__block")
 const swiper = new Swiper('.swiper', {
   loop: true,
 
   pagination: {
     el: '.pagination-slider__bottom',
     clickable: true,
-    type: 'string',
+    type: 'custom',
     bulletClass: 'pagination-slider__block',
-    bulletActiveClass:'active',
-    clickable: true,
-
   },
 
   navigation: {
@@ -17,20 +14,32 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.m-swiper-button-prev',
   },
 
+  on: {
+    slideChange(swiper) {
+      const target =[...btn][swiper.activeIndex - 1]
+
+      btn.forEach(function (button) {
+        button.classList.remove('active')
+      })
+
+      target.classList.add('active')
+    }
+  }
 
 });
 
 const swiperEvents = new Swiper(".swiper-events", {
+
   slidesPerView: 1,
-  spaceBetween: 10,
-  
+  spaceBetween: 20,
+
   breakpoints: {
-    
-  500: {
+
+    500: {
       slidesPerView: 2,
       spaceBetween: 20
     },
-    
+
     940: {
       slidesPerView: 3,
       spaceBetween: 30
@@ -51,23 +60,27 @@ const swiperEvents = new Swiper(".swiper-events", {
 });
 
 const swiperPhoto = new Swiper('.swiper-photo', {
-  slidesPerView: 1,
+  slidesPerView: 2,
   spaceBetween: 10,
- 
+  loop:true,
+  
+
   breakpoints: {
-    
+
     480: {
-      slidesPerView: 2,
-      spaceBetween: 20
+      slidesPerView: 3,
+      spaceBetween: 20,
+      loop:true,
     },
-    
+
     940: {
       slidesPerView: 3,
-      spaceBetween: 20
+      spaceBetween: 20,
+      loop:false,
     }
   },
-  
- 
+
+
 });
 
 
@@ -95,23 +108,8 @@ tabsBtn.forEach(function (item) {
 
 
 
-const btn = document.querySelectorAll(".pagination-slider__block")
-
-btn.forEach(function (item) {
-item.addEventListener('click', function () {
-let bntHover = item;
-
-btn.forEach(function (item) {
-item.classList.remove('active');
-});
-
-bntHover.classList.add('active')
-});
-});
-
-
-document.querySelector('.btn-menu').addEventListener('click', function() {
-	this.classList.toggle("btn-menu--active")
+document.querySelector('.btn-menu').addEventListener('click', function () {
+  this.classList.toggle("btn-menu--active")
 })
 
 let btnMenu = document.querySelector(".btn-menu")
@@ -121,7 +119,7 @@ let bodyAdaptive = document.querySelector("body")
 
 btnMenu.addEventListener('click', function (event) {
   event.stopPropagation();
- 
+
   bodyAdaptive.classList.toggle('body-active');
 });
 
@@ -138,4 +136,20 @@ bodyAdaptive.addEventListener('click', function () {
 });
 
 
+document.querySelectorAll('.tabs__nav-btn').forEach((buttonX) => {
+  buttonX.addEventListener('click', function() {
+  const parentX = this.parentNode.getBoundingClientRect().x
+  const elmX = this.getBoundingClientRect().x
+  const delta = elmX - parentX
+  console.log(delta)
+  console.log(parentX)
+  console.log(elmX)
+  document.querySelector('.icon-line-slaider__tug').style.width = delta + 'px';
 
+  })
+  })
+
+ 
+
+  
+  
