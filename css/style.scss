@@ -1121,10 +1121,11 @@ body {
   height: 2px;
   background-color: #00000015;
   position: relative;
+}
 
-  &__tug {
-    height: 4px;
-    background-color: #e3bf77;
-    position: absolute;
-  }
+.move-cart {
+  height: 4px;
+  background-color: #e3bf77;
+  position: absolute;
+  transition: 0.2s;
 }
